@@ -7,13 +7,13 @@ const Features = () => {
             <div className="container col-xl-10 col-xxl-8 px-4 py-5">
                 <div className="row flex-lg-row-reverse align-items-center g-lg-5 py-5">
                     <div className="col-lg-7 text-cente text-lg-start">
-                        <div className="headin text-right">
-                            <h3 className='fw-bold'>There is no Limit</h3>
+                        <div className="headin text-sm-center">
+                            <h3 className='fw-bold pb-3'>There is no Limit</h3>
                         </div>
 
                         <div className="features_list">
-                            <div className="row gx-5">
-                                <div className="row py-5">
+                            <div className="row">
+                                <div className="row pb-5">
                                     <div className="col-6">
                                         <h6>Super Speed</h6>
                                         <p>Lorem, ipsum dolor sit amet
@@ -55,6 +55,7 @@ const Features = () => {
                     </div>
                 </div>
             </div>
+
         </section>
     )
 }

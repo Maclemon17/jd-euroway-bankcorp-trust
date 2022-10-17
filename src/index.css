@@ -189,6 +189,7 @@ section#showcase {
   transform: translate(600%, -112%);
 }
 
+/* ############   Download section   ###############  */
 section#download {
   background-color: #003D79;
 }
@@ -206,6 +207,8 @@ section#download {
   font-size: 32px;
   color: #fff;
 }
+
+/* ############   Features section   ###############  */
 
 section#features {
   background-color: #fff;
@@ -247,4 +250,48 @@ section#features {
   font-weight: 400;
   color: var(--blue);
   text-transform: uppercase;
+}
+
+
+/* ############   FAQ section   ###############  */
+
+section#faq {
+  padding-bottom: 2rem;
+  
+}
+
+.faq_heading {
+  font-family: 'jaldi';
+  font-size: 25px;
+  line-height: 42px;
+  color: var(--blue);
+  text-transform: uppercase;
+}
+
+.faq_card {
+  width:300px;
+  padding: 20px 15px;
+}
+
+.card-title {
+  font-family: 'javanese text';
+  font-size: 14px;
+  color: var(--blue);
+  line-height: 32px;
+}
+
+.card-text {
+  font-family: jaldi;
+  font-size: 14px;
+  line-height: 24px;
+  font-weight: 400;
+  color: rgba(0, 61, 121, 0.59);
+}
+
+/* ############   Footer section   ###############  */
+
+section#footer {
+  background-color: var(--blue);
+  padding: 2rem 0;
+  color: #fff;
 }

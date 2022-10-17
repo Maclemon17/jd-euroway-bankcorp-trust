@@ -5,10 +5,10 @@ const Footer = () => {
   return (
     <section id="footer">
         <div className="container">
-            <div className="footer_comp d-flex align-items-center justify-content-around">
+            <div className="footer_comp d-flex align-items-start justify-content-around">
                 <div className="footer_logo">
                     <img src={logo} alt="" />
-                    <p>Contact Us</p>
+                    <p className='pt-3'>Contact Us</p>
                 </div>
 
                 <div className="social_links">
@@ -30,7 +30,7 @@ const Footer = () => {
                 </div>
             </div>
 
-            <div className="copy text-center my-3">
+            <div className="copy text-center mt-1">
                 <p>&copy; company 2022</p>
             </div>
         </div>

@@ -1,42 +1,84 @@
-import React from 'react'
+import axios from 'axios';
+import { useState, useEffect } from 'react';
+
 
 const Faq = () => {
-  return (
-    <section id="faq">
-        <div className="container">
-            <h1 className="faq_heading">faq</h1>
+    const [faqs, setFaqs] = useState([]);
 
-            <div className="questions">
-                <div className="container row">
-                    <div className="col-6">
-                        <h6>Question</h6>
-                        <p>Lorem, ipsum dolor sit amet  consectetur, adipisicingLorem, 
-                            ipsum dolor sit amet  consectetur, adipisicingLorem, 
-                            ipsum dolor sit amet  consectetur, adipisicing</p>
+    const url = 'http://localhost:3000/faq.json'
+
+    useEffect(() => {
+        getFaq();
+    }, [])
+
+
+    const getFaq = () => {
+        axios.get(url).then((res) => {
+            setFaqs(res.data)
+            console.log(res.data)
+        }).catch(err => console.log(err)) 
+    }
+
+    return (
+        <section id="faq">
+            <div className="container mx-auto">
+                <h1 className="faq_heading fw-bold">faq</h1>
+
+                <div className="question m-auto">
+                    <div className="row">
+                        {
+                            faqs.map((faq) => (
+                                <div key={faq.id} className="col-sm-6 my-3">
+                                    <div className="faq_card shadow">
+                                        <div className="card-body">
+                                            <h5 className="card-title">{faq.name}</h5>
+                                            <p className="card-text">{faq.answer}</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            ))
+                        }
                     </div>
-                    <div className="col-6">
-                        <h6>Question</h6>
-                        <p>Lorem, ipsum dolor sit amet  consectetur, adipisicingLorem, 
-                            ipsum dolor sit amet  consectetur, adipisicingLorem, 
-                            ipsum dolor sit amet  consectetur, adipisicing</p>
-                    </div>
-                    <div className="col-6">
-                        <h6>Question</h6>
-                        <p>Lorem, ipsum dolor sit amet  consectetur, adipisicingLorem, 
-                            ipsum dolor sit amet  consectetur, adipisicingLorem, 
-                            ipsum dolor sit amet  consectetur, adipisicing</p>
-                    </div>
-                    <div className="col-6">
-                        <h6>Question</h6>
-                        <p>Lorem, ipsum dolor sit amet  consectetur, adipisicingLorem, 
-                            ipsum dolor sit amet  consectetur, adipisicingLorem, 
-                            ipsum dolor sit amet  consectetur, adipisicing</p>
-                    </div>
+
+                    {/* <div className="d-flex ">
+                        <div className="col-6">
+                            <div className="faq_card card">
+                                <h6>Question</h6>
+                                <p>Lorem, ipsum dolor sit amet  consectetur, adipisicingLorem,
+                                    ipsum dolor sit amet  consectetur, adipisicingLorem,
+                                    ipsum dolor sit amet  consectetur, adipisicing</p>
+                            </div>
+                        </div>
+                        <div className="col-6">
+                            <div className="faq_card">
+                                <h6>Question</h6>
+                                <p>Lorem, ipsum dolor sit amet  consectetur, adipisicingLorem,
+                                    ipsum dolor sit amet  consectetur, adipisicingLorem,
+                                    ipsum dolor sit amet  consectetur, adipisicing</p>
+                            </div>
+                        </div>
+                        <div className="col-6">
+                            <div className="faq_card">
+                                <h6>Question</h6>
+                                <p>Lorem, ipsum dolor sit amet  consectetur, adipisicingLorem,
+                                    ipsum dolor sit amet  consectetur, adipisicingLorem,
+                                    ipsum dolor sit amet  consectetur, adipisicing</p>
+                            </div>
+                        </div>
+                        <div className="col-6">
+                            <div className="faq_card">
+                                <h6>Question</h6>
+                                <p>Lorem, ipsum dolor sit amet  consectetur, adipisicingLorem,
+                                    ipsum dolor sit amet  consectetur, adipisicingLorem,
+                                    ipsum dolor sit amet  consectetur, adipisicing</p>
+                            </div>
+                        </div>
+                    </div> */}
                 </div>
+
             </div>
-        </div>
-    </section>
-  )
+        </section>
+    )
 }
 
 export default Faq
