@@ -1,5 +1,9 @@
 import React from 'react';
 import dashboard from '../assets/png/dashboard.png';
+import rocket from '../assets/svg/rocket.svg';
+import touch from '../assets/svg/carbon_touch.svg';
+import phone from '../assets/svg/phone.svg';
+import refresh from '../assets/svg/refresh.svg';
 
 const Features = () => {
     return (
@@ -15,11 +19,13 @@ const Features = () => {
                             <div className="row">
                                 <div className="row pb-5">
                                     <div className="col-6">
+                                        <img src={rocket} alt="rocket icon" />
                                         <h6>Super Speed</h6>
                                         <p>Lorem, ipsum dolor sit amet
                                             consectetur, adipisicing</p>
                                     </div>
                                     <div className="col-6">
+                                        <img src={touch} alt="touch icon" />
                                         <h6>User Friendly</h6>
                                         <p>Lorem, ipsum dolor sit amet
                                             consectetur, adipisicing</p>
@@ -27,11 +33,13 @@ const Features = () => {
                                 </div>
                                 <div className='row pt-5'>
                                     <div className="col-6">
+                                        <img src={phone} alt="phone icon" />
                                         <h6>Modern</h6>
                                         <p>Lorem, ipsum dolor sit amet
                                             consectetur, adipisicing</p>
                                     </div>
                                     <div className="col-6">
+                                        <img src={refresh} alt="refresh icon" />
                                         <h6>Stable</h6>
                                         <p>Lorem, ipsum dolor sit amet
                                             consectetur, adipisicing</p>

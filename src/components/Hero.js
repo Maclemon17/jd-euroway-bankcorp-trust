@@ -2,7 +2,7 @@ import React from 'react';
 import heroImg from '../assets/png/hero.png';
 const Hero = () => {
     return (
-        <section id="hero">
+        <section id="hero" className='mt-3'>
             {/* <div className="container">
                 <div className="hero_image col-6">
                     <img src={heroImg} alt="hero image/ app splash screen" />

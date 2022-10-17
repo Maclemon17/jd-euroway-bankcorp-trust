@@ -3,7 +3,7 @@ import logo from '../assets/svg/logo.svg'
 
 const NavBar = () => {
   return (
-    <nav>
+    <nav className='fixed-top'>
         <div className="header d-flex justify-content-around align-items-center">
             <div className="nav_links">
                 <ul className='d-flex'>
