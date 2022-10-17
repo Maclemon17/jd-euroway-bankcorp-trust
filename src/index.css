@@ -1,13 +1,250 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+:root {
+  --blue: #003D79;
+  --yellow: #FDB913;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+@font-face {
+  font-family: 'javanese text';
+  src: url(../src/assets/fonts/javatext.ttf);
+}
+
+html, body {
+  font-family: 'jaldi';
+}
+
+nav {
+  background-color: #003D79;
+  padding: 27px 0;
+}
+
+/* nav .header {
+  display: flex;
+} */
+
+ul li {
+  list-style-type: none;
+}
+
+ul li a {
+  text-decoration: none;
+  padding: 0 20px;
+  color: #fff;
+}
+
+ul li a:hover {
+  color: #FDB913;
+}
+
+.actions button {
+  /* height: 27px; */
+  border-radius: 5px;
+} 
+
+.actions button:hover {
+  outline: none !important;
+  border: 1px solid transparent !important;
+}
+
+.btn-download {
+  background-color: #00F545 !important;
+  width: 114px;
+  margin-right: 17px;
+}
+
+.btn-login   {
+  background-color: #FDB913 !important;
+  width: 95px;
+}
+
+
+
+/* ############   Hero section   ###############  */
+
+section#hero {
+  background-color: #003D79;
+}
+
+.hero_image {
+  /* text-align: center; */
+  align-items: center;
+}
+
+#hero_heading {
+  font-family: 'javanese text';
+  text-align: center;
+  /* width: 322px; */
+}
+
+#hero_heading h1.text {
+  font-weight: 100;
+  font-style: normal;
+  font-size: 27px;
+  line-height: 39px;
+  letter-spacing: 3px;
+}
+
+#hero_heading h1.power {
+  font-weight: 400;
+  font-style: normal;
+  font-size: 35px;
+  letter-spacing: 3px;
+  line-height: 79px;
+}
+
+#hero_heading h1.business {
+  font-weight: 400;
+  font-style: normal;
+  font-size: 29px;
+  letter-spacing: 3px;
+  /* line-height: 66px; */
+}
+
+.hero_note {
+  font-family: 'jaldi';
+  font-weight: 100;
+  font-size: 15px;
+  text-align: center;
+  margin-top: 32px;
+}
+
+.app_stats {
+  margin-top: 79px;
+}
+
+.stats {
+  min-width: 355px;
+  padding: 15px;
+  background-color: rgba(255, 255, 255, 0.17);
+  border-radius: 5px;
+  /* border-top: 3px solid #fff; */
+  box-shadow: 0px -4px 0px #FFF;
+
+}
+
+.stats_figure {
+  text-transform: uppercase;
+  margin-top: 5px;
+}
+
+
+/* ############   Showcase section   ###############  */
+section#showcase {
+  background-color: #003D79;
+}
+
+.showcase_text h4 {
+  font-family: 'javanese text';
+  font-size: 14px;
+  font-weight: 400;
+}
+
+.showcase_text1 {
+  color: #fff;
+}
+
+.showcase_text1 p {
+  font-family: 'jaldi';
+  color: rgba(255, 255, 255, 0.59);
+  line-height: 24px;
+}
+
+.showcase_text2 p {
+  font-family: 'jaldi';
+  font-weight: 400;
+  
+}
+
+.text_group {
+  display: flex;
+  align-items: center;
+  /* justify-content: space-between ; */
+  width: 350px;
+  padding-bottom: 17px;
+  /* padding: 17px 0; */
+}
+
+.text_group.grp1::before {
+  content: url(./assets/svg/checkmark.svg);
+  font-size: 30px;
+  margin-right: 15px;
+  margin-top: -21px;
+}
+
+.text_group.grp2::before {
+  content: url(./assets/svg/checkmark-blue.svg);
+  font-size: 30px;
+  margin-right: 15px;
+  margin-top: -21px;
+}
+
+.showcase_text2 {
+  background-color: #fff;
+  width: 100%;
+  color: #003D79;
+  padding-top: 32px;
+}
+
+.showcase_image {
+  position: absolute;
+  transform: translate(600%, -112%);
+}
+
+section#download {
+  background-color: #003D79;
+}
+
+#download div.container {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 25px 0;
+}
+
+#download h1 {
+  font-family: 'jaldi';
+  font-weight: 400;
+  font-size: 32px;
+  color: #fff;
+}
+
+section#features {
+  background-color: #fff;
+}
+
+#features h3 {
+  font-family: 'jaldi';
+  font-weight: 400;
+  font-size: 25px;
+  line-height: 42px;
+  text-align: right;
+  color: var(--blue);
+  margin-bottom: 2rem;
+  width: 450px;
+}
+
+#features h6 {
+  font-family: 'javanese text';
+  font-weight: 400;
+  font-size: 14px;
+  color: var(--blue);
+}
+
+#features p {
+  color: rgba(0, 61, 121, 0.59);
+}
+
+.features_list div.col-6 {
+  min-width: 200px;
+}
+
+.features_para {
+  margin-top: 45px;
+}
+
+.features_para h4 {
+  font-family: 'javanese text';
+  font-size: 17px;
+  font-weight: 400;
+  color: var(--blue);
+  text-transform: uppercase;
 }
