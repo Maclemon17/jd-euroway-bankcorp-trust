@@ -6,9 +6,9 @@ import twitter from '../assets/svg/twitter.svg';
 
 const Footer = () => {
   return (
-    <section id="footer">
-        <div className="container">
-            <div className="footer_comp d-flex align-items-start justify-content-around">
+    <footer id="footer">
+        <div className="containe">
+            <div className="footer_comp d-flex justify-content-around">
                 <div className="footer_logo">
                     <img src={logo} alt="" />
                     <p className='pt-3'>Contact Us</p>
@@ -29,7 +29,6 @@ const Footer = () => {
                         <li className='py-3'>Check Usage</li>
                         <li>Meet Sponsring Team</li>
                     </ul>
-
                 </div>
             </div>
 
@@ -37,7 +36,7 @@ const Footer = () => {
                 {/* <p>&copy; company 2022</p> */}
             </div>
         </div>
-    </section>
+    </footer>
   )
 }
 

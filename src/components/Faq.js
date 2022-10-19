@@ -24,11 +24,11 @@ const Faq = () => {
             <div className="container mx-auto">
                 <h1 className="faq_heading fw-bold">faq</h1>
 
-                <div className="question m-auto">
-                    <div className="row">
+                <div className="question m-aut">
+                    <div className="row row-cols-1 row-cols-md-2">
                         {
                             faqs.map((faq) => (
-                                <div key={faq.id} className="col-sm-6 my-3">
+                                <div key={faq.id} className="col my-3">
                                     <div className="faq_card shadow">
                                         <div className="card-body">
                                             <h5 className="card-title">{faq.name}</h5>

@@ -5,7 +5,7 @@ import appstore from '../assets/svg/appstore.svg';
 const Download = () => {
   return (
     <section id="download">
-        <div className="container d-sm-flex-reverse">
+        <div className="container">
             <div className="text">
                 <h1>Download</h1>
             </div>

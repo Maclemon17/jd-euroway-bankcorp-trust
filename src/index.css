@@ -18,15 +18,11 @@ nav {
   border-bottom: 1px solid rgba(108, 159, 210, 0.341);
 }
 
-/* nav .header {
-  display: flex;
-} */
-
 ul li {
   list-style-type: none;
 }
 
-ul li a {
+nav ul li a {
   text-decoration: none;
   padding: 0 20px;
   color: #fff;
@@ -56,8 +52,6 @@ ul li a:hover {
   background-color: #FDB913 !important;
   width: 95px;
 }
-
-
 
 /* ############   Hero section   ###############  */
 
@@ -186,8 +180,9 @@ section#showcase {
 }
 
 .showcase_image {
-  position: absolute;
-  transform: translate(600%, -112%);
+  display: none;
+  /* position: absolute; */
+  /* transform: translate(600%, -112%); */
 }
 
 /* ############   Download section   ###############  */
@@ -271,7 +266,7 @@ section#faq {
 }
 
 .faq_card {
-  width:300px;
+  min-width: 300px;
   padding: 20px 15px;
 }
 
@@ -292,7 +287,7 @@ section#faq {
 
 /* ############   Footer section   ###############  */
 
-section#footer {
+footer#footer {
   background-color: var(--blue);
   padding-top: 3rem;
   /* padding-bottom: 1rem; */
@@ -304,4 +299,57 @@ section#footer {
 
 .quick_links {
   direction: rtl;
+  padding-left: 0 !important;
+}
+
+
+/* ############   MEDIA QUERIES    ############ */
+
+@media screen and (max-width: 745px) {
+  /* fix footer */
+
+  nav ul li a {
+    padding: 0 5px;
+  }
+}
+
+
+@media screen and (max-width: 600px) {
+  /* navbar */
+
+
+  /* showcase */
+  .showcase_text {
+    padding-top: 15px;
+    margin: auto;
+  }
+
+  .text_group {
+    margin: auto;
+  }
+
+  #features h3 {
+    text-align: center;
+  }
+
+  nav .header {
+    flex-direction: row-reverse;
+    align-items: center;
+  }
+
+  nav .actions {
+    display: none;
+  }
+
+  nav ul li a {
+    padding: 0 1rem;
+  }
+
+  #download div.container {
+    flex-direction: column;
+    align-items: center;
+    padding: 25px 0;
+  }
+
+
 }
