@@ -334,7 +334,7 @@ footer#footer {
 
   nav .header {
     flex-direction: row-reverse;
-    align-items: center;
+    align-items: center !important;
   }
 
   nav .actions {

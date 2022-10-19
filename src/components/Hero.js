@@ -27,7 +27,7 @@ const Hero = () => {
             </div> */}
 
 
-            <div className="container col-xl-10 col-xxl-8 px-4 py-5">
+            <div className="container col-xl-10 col-xxl-8 px-4 py-5 clear-fix">
                 <div className="row flex-lg-row-reverse align-items-center g-lg-5 py-5">
                     <div className="col-lg-7 text-center text-white text-lg-start">
                         <div className="hero_heading" id='hero_heading'>
