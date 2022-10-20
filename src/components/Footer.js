@@ -7,10 +7,10 @@ import twitter from '../assets/svg/twitter.svg';
 const Footer = () => {
   return (
     <footer id="footer">
-        <div className="containe">
-            <div className="footer_comp d-flex justify-content-around">
+        <div className="container-sm-fluid">
+            <div className="footer_comp d-flex justify-content-evenly align-items-start">
                 <div className="footer_logo">
-                    <img src={logo} alt="" />
+                    <img src={logo} alt="footer logo" />
                     <p className='pt-3'>Contact Us</p>
                 </div>
 
@@ -20,7 +20,7 @@ const Footer = () => {
                         <li className='py-3'> <img src={linkedin} alt="" /> LinkedIn</li>
                         <li> <img src={facebook} alt="" /> Facebook</li>
                     </ul>
-                    <p className='my-5'>&copy; Company 2022</p>
+                    <p className='copy'>&copy; Company 2022</p>
                 </div>
 
                 <div className="quick_links">
@@ -32,9 +32,9 @@ const Footer = () => {
                 </div>
             </div>
 
-            <div className="copy text-center mt-2">
-                {/* <p>&copy; company 2022</p> */}
-            </div>
+            {/* <div className="copy text-center mt-">
+                <p>&copy; company 2022</p>
+            </div> */}
         </div>
     </footer>
   )

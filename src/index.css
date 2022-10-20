@@ -180,9 +180,9 @@ section#showcase {
 }
 
 .showcase_image {
-  display: none;
-  /* position: absolute; */
-  /* transform: translate(600%, -112%); */
+  /* display: none; */
+  position: absolute;
+  transform: translate(600%, -112%);
 }
 
 /* ############   Download section   ###############  */
@@ -295,11 +295,13 @@ footer#footer {
   font-family: 'jaldi';
   font-size: 18px;
   /* line-height: 30px; */
+
 }
 
 .quick_links {
   direction: rtl;
   padding-left: 0 !important;
+  word-wrap: break-word;
 }
 
 
@@ -310,6 +312,10 @@ footer#footer {
 
   nav ul li a {
     padding: 0 5px;
+  }
+
+  .showcase_image {
+    display: none;
   }
 }
 
@@ -351,5 +357,13 @@ footer#footer {
     padding: 25px 0;
   }
 
+  footer#footer {
+    font-size: 16px
+  }
 
+  .footer_logo img {
+    width: 45px;
+  }
+
+  
 }
