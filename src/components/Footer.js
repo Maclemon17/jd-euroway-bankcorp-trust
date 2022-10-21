@@ -16,9 +16,9 @@ const Footer = () => {
 
                 <div className="social_links">
                     <ul>
-                        <li> <img src={twitter} alt="" /> Twitter</li>
-                        <li className='py-3'> <img src={linkedin} alt="" /> LinkedIn</li>
-                        <li> <img src={facebook} alt="" /> Facebook</li>
+                        <li> <img src={twitter} alt="twitter icon" /> Twitter</li>
+                        <li className='py-3'> <img src={linkedin} alt="linkedin icon" /> LinkedIn</li>
+                        <li> <img src={facebook} alt="facebook icon" /> Facebook</li>
                     </ul>
                     <p className='copy'>&copy; Company 2022</p>
                 </div>

@@ -17,7 +17,7 @@ const Features = () => {
 
                         <div className="features_list">
                             <div className="row">
-                                <div className="row pb-5">
+                                <div className="row pb-lg-5">
                                     <div className="col-6">
                                         <img src={rocket} alt="rocket icon" />
                                         <h6>Super Speed</h6>
@@ -31,7 +31,7 @@ const Features = () => {
                                             consectetur, adipisicing</p>
                                     </div>
                                 </div>
-                                <div className='row pt-5'>
+                                <div className='row pt-lg-5'>
                                     <div className="col-6">
                                         <img src={phone} alt="phone icon" />
                                         <h6>Modern</h6>
