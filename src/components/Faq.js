@@ -6,7 +6,6 @@ const Faq = () => {
     const [faqs, setFaqs] = useState([]);
 
     const url = '/faq.json';
-    console.log(url)
 
     useEffect(() => {
         getFaq();
@@ -16,7 +15,7 @@ const Faq = () => {
     const getFaq = () => {
         axios.get(url).then((res) => {
             setFaqs(res.data)
-            console.log(res.data)
+            // console.log(res.data)
         }).catch(err => console.log(err)) 
     }
 
