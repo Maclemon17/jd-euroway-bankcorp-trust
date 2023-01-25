@@ -5,7 +5,8 @@ import { useState, useEffect } from 'react';
 const Faq = () => {
     const [faqs, setFaqs] = useState([]);
 
-    const url = '%PUBLIC_URL%/faq.json'
+    const url = '/faq.json';
+    console.log(url)
 
     useEffect(() => {
         getFaq();
