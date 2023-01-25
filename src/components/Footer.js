@@ -6,7 +6,7 @@ import twitter from '../assets/svg/twitter.svg';
 
 const Footer = () => {
   return (
-    <footer id="footer">
+    <footer id="footer" className='footer'>
         <div className="container-sm-fluid">
             <div className="footer_comp d-flex justify-content-evenly align-items-start">
                 <div className="footer_logo">
@@ -32,10 +32,8 @@ const Footer = () => {
                 </div>
             </div>
 
-            {/* <div className="copy text-center mt-">
-                <p>&copy; company 2022</p>
-            </div> */}
         </div>
+            
     </footer>
   )
 }
